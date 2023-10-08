@@ -61,6 +61,18 @@ public extension Ethereum {
         return request(providerRequest)
     }
 
+    /**
+    Hi,
+    Can you guys please fix this connect. It often (60% of the time) doesn't work. 
+    mmsdk| SDK connected to server
+    mmsdk| Clients connected: [xxxx]
+    mmsdk| SDK disconnected
+    It will often disconnect the SDK before it gets a chance to connect.
+    Maybe a possiblity would be to hold off on disconnecting the SDK for another 5-10 seconds until the client properly connects?
+    Or try to fix whatever is causing the SDK to disconnct.
+    Please, and thank you.
+    a keen user...
+    */
     @discardableResult
     /// Connect to MetaMask mobile wallet. This method must be called first and once, to establish a connection before any requests can be made
     /// - Parameter dapp: A struct describing the dapp making the request
